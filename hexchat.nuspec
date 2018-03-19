@@ -3,7 +3,7 @@
   <metadata>
     <id>hexchat</id>
     <title>HexChat IRC client</title>
-    <version>2.12.4</version>
+    <version>2.14.1</version>
     <authors>Berke Viktor</authors>
     <owners>lod</owners>
     <summary>HexChat is an IRC client based on XChat, but unlike XChat it’s completely free for both Windows and Unix-like systems.</summary>
