@@ -1,29 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
     <id>hexchat</id>
-    <title>HexChat IRC client</title>
-    <version>2.14.2</version>
-    <authors>Berke Viktor</authors>
+    <version>2.16.0</version>
+    <packageSourceUrl>https://github.com/lodriguez/chocolatey-hexchat/</packageSourceUrl>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>lod</owners>
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>hexchat IRC client (Install)</title>
+    <authors>Berke Viktor</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://hexchat.github.io/index.html</projectUrl>
+    <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/4/4e/Hexchat_Logo.svg</iconUrl>
+    <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2016 Berke Viktor.</copyright>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <licenseUrl>https://raw.githubusercontent.com/hexchat/hexchat/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/hexchat/hexchat</projectSourceUrl>
+    <docsUrl>https://hexchat.readthedocs.io/en/latest/</docsUrl>
+    <bugTrackerUrl>https://github.com/hexchat/hexchat/issues</bugTrackerUrl>
+    <tags>hexchat irc xchat xchat-wdk chat</tags>
     <summary>HexChat is an IRC client based on XChat, but unlike XChat it’s completely free for both Windows and Unix-like systems.</summary>
     <description>HexChat is a fork of XChat which is free for Linux and Windows. It was originally named XChat-WDK and was created as an alternative to the Shareware version of XChat for Windows, but changed its name because it went far beyond being a simple Windows only version of XChat and efforts to merge into XChat officially hit a dead-end</description>
-    <projectUrl>https://hexchat.github.io/</projectUrl>
-    <packageSourceUrl>https://github.com/horstderheld/chocolatey-hexchat/</packageSourceUrl>
-    <projectSourceUrl>https://github.com/hexchat/hexchat</projectSourceUrl>
-    <docsUrl>https://hexchat.readthedocs.org/en/latest/</docsUrl>
-    <bugTrackerUrl>https://github.com/hexchat/hexchat/issues</bugTrackerUrl>
-    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/4/4e/Hexchat_Logo.svg</iconUrl>
-    <releaseNotes>https://hexchat.readthedocs.org/en/latest/changelog.html</releaseNotes>
-    <tags>hexchat irc xchat xchat-wdk chat</tags>
-    <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2016 Berke Viktor.</copyright>
-    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>https://hexchat.readthedocs.io/en/latest/changelog.html</releaseNotes>
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="vcredist2015"/>
+      <dependency id="chocolatey-core.extension" version="1.3.5.1" />
     </dependencies>
+    <!-- chocolatey-core.extension - https://community.chocolatey.org/packages/chocolatey-core.extension
+         - You want to take advantage of other functions in the core community maintainer's team extension package
+    -->
   </metadata>
   <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
   </files>
 </package>
