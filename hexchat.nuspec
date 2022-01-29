@@ -6,9 +6,9 @@
     <!-- This section is about this package, although id and version have ties back to the software -->
     <id>hexchat</id>
     <version>2.16.0</version>
-    <packageSourceUrl>https://github.com/lodriguez/chocolatey-hexchat/</packageSourceUrl>
+    <packageSourceUrl>https://github.com/MItsutoshiNAKANO/chocolatey-hexchat/</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <owners>lod</owners>
+    <owners>Mitsutoshi Nakano</owners>
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
