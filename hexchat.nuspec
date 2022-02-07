@@ -18,7 +18,7 @@
     <projectUrl>https://hexchat.github.io/index.html</projectUrl>
     <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
     <iconUrl>https://upload.wikimedia.org/wikipedia/commons/4/4e/Hexchat_Logo.svg</iconUrl>
-    <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2016 Berke Viktor.</copyright>
+    <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2021 Berke Viktor.</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/hexchat/hexchat/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -32,6 +32,7 @@
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
+      <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="vcredist2015" version="14.0.24215.20170201" />
       <dependency id="chocolatey-core.extension" version="1.3.5.1" />
     </dependencies>
