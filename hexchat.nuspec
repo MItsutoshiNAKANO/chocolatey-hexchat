@@ -18,7 +18,7 @@
     <projectUrl>https://hexchat.github.io/index.html</projectUrl>
     <!-- There are a number of CDN Services that can be used for hosting the Icon for a package. More information can be found here: https://docs.chocolatey.org/en-us/create/create-packages#package-icon-guidelines -->
     <iconUrl>https://upload.wikimedia.org/wikipedia/commons/4/4e/Hexchat_Logo.svg</iconUrl>
-    <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2016 Berke Viktor.</copyright>
+    <copyright>Copyright (C) 1998-2010 Peter Zelezny. Copyright (C) 2009-2021 Berke Viktor.</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/hexchat/hexchat/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
